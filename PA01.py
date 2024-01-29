@@ -139,7 +139,13 @@ with st.container():
             df_aux, use_container_width=True, height =600, 
             column_config={
                 "restaurant_name": "Nome Restaurante",  "city": "Cidade",  "cuisines": "Culinária",
-                "price_range": "Cat. Preço", "rating_text": "Cat. Nota",
+                "price_range": "Cat. Preço", "rating_text": "Cat. Nota",                
+                "votes": st.column_config.ProgressColumn(
+                    "Nota",
+                    format="%d ⭐",
+                    min_value=df_aux['votes'].min(),
+                    max_value=df_aux['votes'].max(),
+                ),
             },
             hide_index=True, 
         )
