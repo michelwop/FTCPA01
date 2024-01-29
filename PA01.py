@@ -16,7 +16,7 @@ import seaborn as sns
 
 # ====================== IMPORTAÇÃO / TRATAMENTO DE DADOS ============================
 #Importa data set
-df = pd.read_csv('C:/Users/miche/Documents/DC/Comunidade DS/PA01/zomato.csv')
+df = pd.read_csv('zomato.csv')
 
 def rename_columns(dataframe):
     df = dataframe.copy()
