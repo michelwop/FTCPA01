@@ -2,17 +2,17 @@
 import pandas as pd
 import plotly.express as px
 import folium
-from datetime import datetime
-import time
-from haversine import haversine
-import numpy as np
+import inflection
 import streamlit as st
 from PIL import Image
 from streamlit_folium import folium_static
-import plotly.graph_objects as go
-import inflection
-import pygwalker as pyg
-import seaborn as sns
+#from datetime import datetime
+#import time
+#from haversine import haversine
+#import numpy as np
+#import plotly.graph_objects as go
+#import pygwalker as pyg
+#import seaborn as sns
 
 # ====================== IMPORTAÇÃO / TRATAMENTO DE DADOS ============================
 #Importa data set
